@@ -10,18 +10,6 @@
 }
 
 :root {
-  --body_bg: white;
-  --body_color: black;
-  --link_color: navy;
-  --btnOne_bg: black;
-  --btnOne_color: white;
-  --btnTwo_bg: white;
-  --btnTwo_color: black;
-  --icon_bg: black;
-  --icon_m: 0px;
-}
-
-[data-theme="dark"] {
   --body_bg: #0d0d0d;
   --body_color: white;
   --link_color: navy;
@@ -31,6 +19,16 @@
   --btnTwo_color: white;
   --icon_bg: transparent;
   --icon_m: 5px;
+}
+
+[data-theme="light"] {
+  --body_bg: white;
+  --body_color: black;
+  --btnOne_bg: black;
+  --btnOne_color: white;
+  --btnTwo_bg: white;
+  --btnTwo_color: black;
+  --icon_bg: black;
 }
 
 body {
@@ -62,22 +60,18 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
   background-color: var(--body_bg);
- 
-
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: rgb(68, 68, 68);
   border-radius: 4px;
-
 }
 
-@media (max-width : 767px) {
+@media (max-width: 767px) {
   body::-webkit-scrollbar {
-      width: 3px;
-      height: 3px;
-    }
-  
+    width: 3px;
+    height: 3px;
+  }
 }
 h1,
 h2,

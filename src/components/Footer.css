@@ -38,16 +38,8 @@
 .follow p {
   position: relative;
 }
-.follow svg {
-  position: absolute;
-  left: 113px;
-  top: 2.3px;
-  font-size: 18px;
-  opacity: 1;
-  animation: rightToLeft 1s infinite;
 
-}
-.follow p:after {
+.follow p::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -55,10 +47,12 @@
   width: 50px;
   height: 2.02px;
   display: block;
+  transition: all 0.5s ease-in-out;
   background-color: var(--body_color);
-  background-color: rgb(33 150 243);
 }
-
+.follow:hover p::after{
+  background-color: var(--link_color);
+}
 
 @media (min-width: 1025px) {
   .sideContent {
@@ -82,7 +76,7 @@
     margin-top: 40px;
   }
 
-  .follow p:after {
+  .follow p::after {
     top: 108px;
     left: -12px;
     transform: rotate(90deg);
@@ -90,7 +84,7 @@
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  .follow p:after {
+  .follow p::after {
     top: 13px;
     left: 90px;
   }

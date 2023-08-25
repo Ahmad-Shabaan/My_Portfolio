@@ -1,4 +1,4 @@
-import React, { useRef, useState , useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Container, Navbar } from "react-bootstrap";
 import "./Header.css";
 import { MdOutlineLightMode } from "react-icons/md";
@@ -21,15 +21,13 @@ export default function Header() {
     event.stopPropagation();
   };
 
-
   useEffect(() => {
     if (isScrollDisabled) {
-      document.body.classList.add('no-scroll');
+      document.body.classList.add("no-scroll");
     } else {
-      document.body.classList.remove('no-scroll');
+      document.body.classList.remove("no-scroll");
     }
   }, [isScrollDisabled]);
-
 
   const currentWidth = window.innerWidth;
   return (
@@ -40,7 +38,9 @@ export default function Header() {
             color: theme === "dark" ? "white" : "black",
           }}
         >
-          <Link to={"/home"}>A . S</Link>
+          <Link to={"/home"}>
+            A..S
+          </Link>
         </Navbar.Brand>
         <div
           style={{
