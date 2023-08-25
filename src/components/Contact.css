@@ -1,0 +1,123 @@
+.contact{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.contact h4 {
+  margin-bottom: 20px;
+}
+.contact h3 {
+  margin-bottom: 15px;
+}
+address p {
+  margin-top: 10px;
+}
+input,
+textarea {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--body_color) !important;
+}
+.contact .btn_one,
+.contact .btn_lOne {
+  border-radius: 0;
+  padding: 5px 20px;
+  border: solid white 2px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  background-color: var(--btnOne_bg);
+  color: var(--btnOne_color);
+  border: solid var(--btnOne_bg) 2px;
+  transition: transform 0.2s all ease-in-out;
+}
+
+.contact .btn_one:hover,
+.contact .btn_lOne:hover {
+  background-color: var(--btnTwo_bg) !important;
+  color: var(--btnTwo_color);
+  border: solid var(--btnOne_bg) 2px;
+  transform: scale(1.2);
+}
+
+
+
+.myForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 50px; */
+}
+
+.myForm .inputField {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  position: relative;
+}
+.myForm form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.myForm .inputField input,
+.myForm .inputField textarea{
+  width: 100%;
+  border: 1px solid #224545;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--description);
+}
+
+.myForm .inputField textarea{
+  height: 200px;
+}
+
+.myForm button{
+  width: fit-content;
+
+}
+
+.myForm .errorMsg {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  transform: translateY(50%);
+  width: 120px;
+  color: #dc3a3a;
+  text-align: center;
+  font-weight: 600;
+  background-color: var(--body_bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 4px;
+  border: 2px solid #224545;
+  box-shadow: var(--box_shadow);
+}
+
+@media (max-width: 1025px) {
+  .contact {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .errorMsg {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
