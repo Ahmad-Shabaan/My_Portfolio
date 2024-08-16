@@ -11,6 +11,9 @@ import Alert from "./components/Alert";
 import { Portfolio } from "./components/Portfolio";
 // import Cursor from "./components/Cursor";
 import { AnimatePresence } from "framer-motion";
+import ParticleBG from "./components/ParticalBG";
+import { About } from "./components/About";
+import NotFound from "./components/NotFound";
 function App() {
   const customTheme = extendTheme({
     styles: {
@@ -28,14 +31,18 @@ function App() {
         <ChakraProvider theme={customTheme}>
           <AlertProvider>
             <main>
+              <ParticleBG id='particles'/>
               <Header />
               <AnimatePresence>
                 <Routes location={location} key={location.pathname}>
                   <Route path="/" element={<Home />} />
                   <Route path="/home" element={<Home />} />
+                  <Route path="/about" element={<About />} />
                   <Route path="/portfolio" element={<Portfolio />} />
                   <Route path="/skills" element={<Skills />} />
                   <Route path="/contact" element={<Contact />} />
+                  <Route path="/*" element={<NotFound />} />
+
                 </Routes>
               </AnimatePresence>
               <Alert />

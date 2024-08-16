@@ -2,11 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTheme } from "../context/Theme";
-export default function Buttons({url}) {
+export default function Buttons({repo , demo}) {
   const { theme } = useTheme();
   return (
     <div className="buttons">
-      <Link to={url}>
+      <a href={demo} target="_blank" rel="noopener noreferrer">
         <motion.button
           className={theme === "dark" ? "btn_one" : "btn_lOne"}
           initial={{ opacity: 0.6 }}
@@ -19,9 +19,9 @@ export default function Buttons({url}) {
         >
           Demo
         </motion.button>
-      </Link>
+      </a>
 
-      <Link to={url}>
+      <a href={repo} target="_blank" rel="noopener noreferrer">
         <motion.button
           className={theme === "dark" ? "btn_two" : "btn_lTwo"}
           initial={{ opacity: 0.6 }}
@@ -34,7 +34,7 @@ export default function Buttons({url}) {
         >
           Repo
         </motion.button>
-      </Link>
+      </a>
     </div>
   );
 }

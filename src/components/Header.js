@@ -38,9 +38,7 @@ export default function Header() {
             color: theme === "dark" ? "white" : "black",
           }}
         >
-          <Link to={"/home"}>
-            A..S
-          </Link>
+          <Link to={"/home"}>A..S</Link>
         </Navbar.Brand>
         <div
           style={{
@@ -59,10 +57,13 @@ export default function Header() {
                   <Link to={"/home"}>Home</Link>
                 </li>
                 <li>
+                  <Link to={"/about"}>About</Link>
+                </li>
+                <li>
                   <Link to={"/skills"}>Skills</Link>
                 </li>
                 <li>
-                  <Link to={"/portfolio"}>Projects</Link>
+                  <Link to={"/portfolio"}>Portfolio</Link>
                 </li>
                 <li>
                   <Link to={"/contact"}>Contact</Link>
@@ -94,10 +95,13 @@ export default function Header() {
             <Link to={"/home"}>Home</Link>
           </li>
           <li onClick={toggleNav}>
+            <Link to={"/about"}>About</Link>
+          </li>
+          <li onClick={toggleNav}>
             <Link to={"/skills"}>Skills</Link>
           </li>
           <li onClick={toggleNav}>
-            <Link to={"/portfolio"}>Projects</Link>
+            <Link to={"/portfolio"}>Portfolio</Link>
           </li>
           <li onClick={toggleNav}>
             <Link to={"/contact"}>Contact</Link>

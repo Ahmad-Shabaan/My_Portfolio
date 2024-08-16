@@ -5,11 +5,19 @@
   justify-content: center;
   align-items: flex-start;
 }
-.portfolioCon .colItems {
+/* .portfolioCon .colItems {
   width: calc((100% - 40px) / 3);
+} */
+
+.portfolioCon .colItems{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .cardPortfolio {
-  width: 100%;
+  width: calc((100% - 60px) / 3 );
 }
 .portfolioCon img {
   width: 100%;
@@ -105,9 +113,9 @@
 }
 
 @media (max-width: 767px) {
-  .portfolioCon .colItems {
+  /* .portfolioCon .colItems {
     width: calc((100% - 20px) / 2);
-  }
+  } */
   .portfolioCon .thirdCol {
     display: flex;
     flex-wrap: wrap;
@@ -120,9 +128,9 @@
 }
 
 @media (max-width: 576px) {
-  .portfolioCon .colItems {
+  /* .portfolioCon .colItems {
     width: 80%;
-  }
+  } */
   .portfolioCon .thirdCol {
     width: 80%;
   }

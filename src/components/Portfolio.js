@@ -6,81 +6,90 @@ import Footer from "./Footer";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { useTheme } from "../context/Theme";
+import template1 from "../images/template1.png";
+import template2 from "../images/template2.png";
+import template3 from "../images/template3.png";
+import template4 from "../images/template4.png";
+import template5 from "../images/template5.png";
+import template6 from "../images/template6.png";
+import react1 from "../images/react1.png";
+import react3 from "../images/react3.png";
+import react2 from "../images/react2.png";
+import react4 from "../images/react4.png";
+
 import Buttons from "./Buttons";
 export const Portfolio = () => {
   const { theme } = useTheme();
   const projects = [
     {
-      projectName: "",
-      url: "/Home",
-      description: "Never give up, Great things take time, Be patient",
-      imgUrl: "https://picsum.photos/400/500/?grayscale",
+      projectName: "Ecommerce",
+      demo: "https://souqlii.com/",
+      repo: "https://github.com/Ahmad-Shabaan/E-commerce",
+      description: "Simple Ecommerce using react js + firebase",
+      imgUrl: react4,
     },
     {
-      projectName: "",
-      url: "/Home",
-      description: "Never give up, Great things take time, Be patient",
-      imgUrl: "https://picsum.photos/400/550/?grayscale",
+      projectName: "Restaurant",
+      demo: "https://restaurant-ten-inky.vercel.app/",
+      repo: "https://github.com/Ahmad-Shabaan/restaurant",
+      description: "Developed a stylish Restaurant template using React.",
+      imgUrl: react2,
     },
     {
-      projectName: "",
-      url: "/Home",
-      description: "Never give up, Great things take time, Be patient",
-      imgUrl: "https://picsum.photos/400/?grayscale",
+      projectName: "Shopwise",
+      demo: "https://shopwise-two.vercel.app/",
+      repo: "https://github.com/Ahmad-Shabaan/shopwise",
+      description: "Developed a stylish Shopwise template using React.",
+      imgUrl: react3,
     },
     {
-      projectName: "",
-      url: "/Home",
-      description: "Never give up, Great things take time, Be patient",
-      imgUrl: "https://picsum.photos/400/500/?grayscale",
+      projectName: "Portfolio",
+      demo: "https://portfolio-ahmed301090.vercel.app/",
+      repo: "https://github.com/Ahmad-Shabaan/portfolio",
+      description: "Developed a stylish Portfolio using React.",
+      imgUrl: react1,
     },
     {
-      projectName: "",
-      url: "/Home",
-      description: "Never give up, Great things take time, Be patient",
-      imgUrl: "https://picsum.photos/400/600/?grayscale",
+      projectName: "Template Design 6",
+      demo: "https://template2023.vercel.app/",
+      repo: "https://github.com/Ahmad-Shabaan/template2023",
+      description: "Developed a stylish template using HTML and CSS.",
+      imgUrl: template6,
     },
     {
-      projectName: "",
-      url: "/Home",
-      description: "Never give up, Great things take time, Be patient",
-      imgUrl: "https://picsum.photos/400/?grayscale",
+      projectName: "Template Design 5",
+      demo: "https://engage-five.vercel.app/",
+      repo: "https://github.com/Ahmad-Shabaan/Engage",
+      description: "Developed a stylish template using HTML and CSS.(not responsive)",
+      imgUrl: template5,
     },
     {
-      projectName: "",
-      url: "/Home",
-      description: "Never give up, Great things take time, Be patient",
-      imgUrl: "https://picsum.photos/400/600/?grayscale",
+      projectName: "Template Design 4",
+      demo: "https://task-two-one.vercel.app/",
+      repo: "https://github.com/Ahmad-Shabaan/task_two",
+      description: "Developed a stylish template using HTML and CSS.(not responsive)",
+      imgUrl: template4,
     },
     {
-      projectName: "",
-      url: "/Home",
-      description: "Never give up, Great things take time, Be patient",
-      imgUrl: "https://picsum.photos/400/?grayscale",
+      projectName: "Template Design 3",
+      demo: "https://template-three-wheat.vercel.app/",
+      repo: "https://github.com/Ahmad-Shabaan/template_three",
+      description: "Developed a stylish template using HTML and CSS.",
+      imgUrl: template3,
     },
     {
-      projectName: "",
-      url: "/Home",
-      description: "Never give up, Great things take time, Be patient",
-      imgUrl: "https://picsum.photos/400/500/?grayscale",
+      projectName: "Template Design 2",
+      demo: "https://template-two-blond.vercel.app/",
+      repo: "https://github.com/Ahmad-Shabaan/template_two",
+      description: "Developed a stylish template using HTML and CSS.",
+      imgUrl: template2,
     },
     {
-      projectName: "",
-      url: "/Home",
-      description: "Never give up, Great things take time, Be patient",
-      imgUrl: "https://picsum.photos/400/600/?grayscale",
-    },
-    {
-      projectName: "",
-      url: "/Home",
-      description: "Never give up, Great things take time, Be patient",
-      imgUrl: "https://picsum.photos/400/500/?grayscale",
-    },
-    {
-      projectName: "",
-      url: "/Home",
-      description: "Never give up, Great things take time, Be patient",
-      imgUrl: "https://picsum.photos/400/450/?grayscale",
+      projectName: "Template Design 1",
+      demo: "https://template-ruby-five.vercel.app/",
+      repo: "https://github.com/Ahmad-Shabaan/template_one",
+      description: "Developed a stylish template using HTML and CSS.",
+      imgUrl: template1,
     },
   ];
   return (
@@ -105,46 +114,14 @@ export const Portfolio = () => {
         exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
       >
         <div className="colItems">
-          {projects.slice(0, projects.length / 3).map((child, index) => {
+          {projects.map((project, index) => {
             return (
               <div key={index} className="cardPortfolio">
                 <div className="figure">
-                  <BlurhashComp src={child.imgUrl} />
+                  <BlurhashComp src={project.imgUrl} />
                   <div className="caption">
-                    <p>{child.description}</p>
-                    <Buttons url={child.url} />
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-        <div className="colItems">
-          {projects
-            .slice(projects.length / 3, (projects.length * 2) / 3)
-            .map((child, index) => {
-              return (
-                <div key={index} className="cardPortfolio">
-                  <div className="figure">
-                    <BlurhashComp src={child.imgUrl} />
-                    <div className="caption">
-                      <p>{child.description}</p>
-                      <Buttons url={child.url} />
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-        </div>
-        <div className="thirdCol colItems">
-          {projects.slice((projects.length * 2) / 3).map((child, index) => {
-            return (
-              <div key={index} className="cardPortfolio">
-                <div className="figure">
-                  <BlurhashComp src={child.imgUrl} />
-                  <div className="caption">
-                    <p>{child.description}</p>
-                    <Buttons url={child.url} />
+                    <p>{project.description}</p>
+                    <Buttons repo={project.repo} demo={project.demo}/>
                   </div>
                 </div>
               </div>

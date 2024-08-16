@@ -22,72 +22,72 @@ export const Skills = () => {
   const mySkills = [
     {
       img: html,
-      progress: "90%",
+      name: "HTML",
       color: "#e44d26",
     },
     {
       img: css,
-      progress: "85%",
+      name: "CSS",
       color: "rgb(2 119 189)",
     },
     {
       img: sass,
-      progress: "10%",
+      name: "SASS",
       color: "rgb(207 100 154)",
     },
     {
       img: js,
-      progress: "80%",
+      name: "JS",
       color: "rgb(239 219 78)",
     },
     {
       img: ts,
-      progress: "0%",
+      name: "TS",
       color: "rgb(45 121 199)",
     },
     {
       img: bootstrap,
-      progress: "70%",
+      name: "Bootsrap",
       color: "rgb(86 61 124)",
     },
     {
       img: tw,
-      progress: "0%",
+      name: "Tailwind",
       color: "rgb(56 189 248)",
     },
     {
       img: github,
-      progress: "60%",
+      name: "Githup",
       color: "black",
     },
     {
       img: react,
-      progress: "75%",
+      name: "React",
       color: "rgb(97 218 251)",
     },
     {
       img: chakra,
-      progress: "50%",
+      name: "Chakra UI",
       color: "rgb(77 200 196)",
     },
     {
       img: nodejs,
-      progress: "10%",
+      name: "NodeJS",
       color: "rgb(83 158 67)",
     },
     {
       img: ex,
-      progress: "0%",
+      name: "Express",
       color: "rgb(130 130 130)",
     },
     {
       img: md,
-      progress: "0%",
+      name: "Mongo DB",
       color: "rgb(65 47 31)",
     },
     {
       img: firebase,
-      progress: "40%",
+      name: "Firebase",
       color: "rgb(255 160 0)",
     },
   ];
@@ -118,8 +118,7 @@ export const Skills = () => {
               <img src={skill.img} alt="skill" />
               <div className="progress">
                 <div className="percentage" style={{ color: skill.color }}>
-                  <h2>{skill.progress}</h2>
-                  <p>Progress</p>
+                  <h2 style={{fontSize:'18px'}}>{skill.name}</h2>
                 </div>
               </div>
             </div>

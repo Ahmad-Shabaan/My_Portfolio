@@ -26,10 +26,10 @@ export default function Home() {
             <Typewriter
               options={{
                 strings: [
-                  "Welcome to my portfolio website !",
-                  "I am 21 years old",
-                  "an engineering student from Ash Sharqia",
-                  " I am currently in my fourth year of study",
+                  "Welcome to my portfolio website!",
+                  'My name is Ahmed Shabaan.',
+                  "I am 23 years old.",
+                  "I graduated from the Faculty of Engineering in 2024,",
                   "specializing in Computer and Information Systems Engineering.",
                 ],
                 autoStart: true,

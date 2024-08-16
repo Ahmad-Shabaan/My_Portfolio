@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { motion } from "framer-motion";
 import "./Contact.css";
-import { Button } from "@chakra-ui/react";
+import { Button, background } from "@chakra-ui/react";
 import * as Yup from "yup";
 import { useAlertContext } from "../context/AlertContext";
 import { Container, Row, Col } from "react-bootstrap";
@@ -35,10 +35,10 @@ export const Contact = () => {
     setLoading(true);
     emailjs
       .sendForm(
-        "service_qffmmtv",
-        "template_40lyx96",
+        "service_hhmhwak",
+        "template_q20d1qu",
         form.current,
-        "wED-IzBUexSNHEEse"
+        "AKVbowzquivBiXHri"
       )
       .then(
         () => {
@@ -52,6 +52,7 @@ export const Contact = () => {
           values.message = "";
         },
         (error) => {
+          setLoading(false);
           onOpen(error.text, "error");
         }
       );
@@ -79,7 +80,7 @@ export const Contact = () => {
           <address>
             <strong>Email:</strong> <a href="/contact">ashabaan887@gmail.com</a>
             <p>
-              <strong>Phone:</strong>(+20)109-291-9962
+              <strong>Phone:</strong>(+20)010-9291-9962
             </p>
           </address>
         </Col>
@@ -98,6 +99,7 @@ export const Contact = () => {
                     name="user_name"
                     id="user_name"
                     autoComplete="off"
+                    
                   />
                   <ErrorMessage
                     name="user_name"
