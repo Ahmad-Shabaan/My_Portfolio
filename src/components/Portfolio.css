@@ -9,7 +9,7 @@
   width: calc((100% - 40px) / 3);
 } */
 
-.portfolioCon .colItems{
+.portfolioCon .colItems {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -17,7 +17,7 @@
   align-items: center;
 }
 .cardPortfolio {
-  width: calc((100% - 60px) / 3 );
+  width: 400px;
 }
 .portfolioCon img {
   width: 100%;
@@ -39,7 +39,7 @@
   width: 100%;
 }
 .caption {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -85,7 +85,6 @@
   opacity: 1;
 }
 
-
 @media (min-width: 768px) and (max-width: 992px) {
   .btn_one,
   .btn_two,
@@ -113,28 +112,7 @@
 }
 
 @media (max-width: 767px) {
-  /* .portfolioCon .colItems {
-    width: calc((100% - 20px) / 2);
-  } */
-  .portfolioCon .thirdCol {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-  }
-  .portfolioCon .thirdCol .cardPortfolio {
-    width: calc((100% - 20px) / 2);
-  }
-}
-
-@media (max-width: 576px) {
-  /* .portfolioCon .colItems {
-    width: 80%;
-  } */
-  .portfolioCon .thirdCol {
-    width: 80%;
-  }
-  .portfolioCon .thirdCol .cardPortfolio {
-    width: 100%;
+  .cardPortfolio {
+    width: 350px;
   }
 }

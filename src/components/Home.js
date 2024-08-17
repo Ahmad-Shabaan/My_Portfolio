@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import portfolioImage from "../images/layer.jpg";
+import portfolioImage from "../images/ahmed.jpg";
 import { Col, Container, Row } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import { useTheme } from "../context/Theme";

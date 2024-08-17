@@ -1,14 +1,13 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import "./About.css";
-import BlurhashComp from "./BlurhashComp";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { useTheme } from "../context/Theme";
-import Buttons from "./Buttons";
 export const About = () => {
   const { theme } = useTheme();
+  const color = theme === "dark" ? "black" : "#f5f5f5";
   return (
     <Container>
       <Helmet>
@@ -17,7 +16,7 @@ export const About = () => {
       <Row>
         <h1
           style={{
-            borderBottom: "1px solid var(--body_color",
+            borderBottom: "1px solid var(--body_color)",
             padding: "8px",
           }}
         >
@@ -32,7 +31,7 @@ export const About = () => {
       >
         <div
           style={{
-            backgroundColor: "black",
+            backgroundColor: `${color}`,
             padding: "2rem",
             marginBottom: "8rem",
             zIndex: 1,
@@ -44,17 +43,28 @@ export const About = () => {
               <li>Phone: 01092919962</li>
               <li>
                 LinkedIn:{" "}
-                <a href="www.linkedin.com/in/ahmad-shabaan" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="www.linkedin.com/in/ahmad-shabaan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   www.linkedin.com/in/ahmad-shabaan
                 </a>
               </li>
               <li>
                 E-Mail:
-                <a href="mailto:ashabaan887@gmail.com"> ashabaan887@gmail.com</a>
+                <a href="mailto:ashabaan887@gmail.com">
+                  {" "}
+                  ashabaan887@gmail.com
+                </a>
               </li>
               <li>
                 Githup:{" "}
-                <a href="https://github.com/Ahmad-Shabaan" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/Ahmad-Shabaan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {" "}
                   https://github.com/Ahmad-Shabaan
                 </a>
@@ -62,7 +72,11 @@ export const About = () => {
               <li>Address: Faqous Ash Sharqiyah Governorate</li>
               <li>
                 Resume:
-                <a href=" https://drive.com/Ahmad-Shabaan" target="_blank" rel="noopener noreferrer">
+                <a
+                  href=" https://drive.com/Ahmad-Shabaan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {" "}
                   https://drive.com/Ahmad-Shabaan
                 </a>

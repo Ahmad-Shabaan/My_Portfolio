@@ -60,14 +60,16 @@ export const Portfolio = () => {
       projectName: "Template Design 5",
       demo: "https://engage-five.vercel.app/",
       repo: "https://github.com/Ahmad-Shabaan/Engage",
-      description: "Developed a stylish template using HTML and CSS.(not responsive)",
+      description:
+        "Developed a stylish template using HTML and CSS.(not responsive)",
       imgUrl: template5,
     },
     {
       projectName: "Template Design 4",
       demo: "https://task-two-one.vercel.app/",
       repo: "https://github.com/Ahmad-Shabaan/task_two",
-      description: "Developed a stylish template using HTML and CSS.(not responsive)",
+      description:
+        "Developed a stylish template using HTML and CSS.(not responsive)",
       imgUrl: template4,
     },
     {
@@ -121,7 +123,7 @@ export const Portfolio = () => {
                   <BlurhashComp src={project.imgUrl} />
                   <div className="caption">
                     <p>{project.description}</p>
-                    <Buttons repo={project.repo} demo={project.demo}/>
+                    <Buttons repo={project.repo} demo={project.demo} />
                   </div>
                 </div>
               </div>
