@@ -48,7 +48,7 @@ export const About = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  www.linkedin.com/in/ahmad-shabaan
+                  linkedin.com/in/ahmad-shabaan
                 </a>
               </li>
               <li>
@@ -66,19 +66,19 @@ export const About = () => {
                   rel="noopener noreferrer"
                 >
                   {" "}
-                  https://github.com/Ahmad-Shabaan
+                  github.com/Ahmad-Shabaan
                 </a>
               </li>
               <li>Address: Faqous Ash Sharqiyah Governorate</li>
               <li>
                 Resume:
                 <a
-                  href=" https://drive.com/Ahmad-Shabaan"
+                  href=" https://drive.google.com/file/d/19I3vXFd5kSkPeVYtWMg40X0Mfxb0CFCk/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {" "}
-                  https://drive.com/Ahmad-Shabaan
+                  drive.com/Ahmad-Shabaan
                 </a>
               </li>
             </ul>
