@@ -23,7 +23,7 @@ export const Portfolio = () => {
   const projects = [
     {
       projectName: "Ecommerce",
-      demo: "https://souqlii.com/",
+      demo: "https://jammal-67432.firebaseapp.com/",
       repo: "https://github.com/Ahmad-Shabaan/E-commerce",
       description: "Simple Ecommerce using react js + firebase",
       imgUrl: react4,
