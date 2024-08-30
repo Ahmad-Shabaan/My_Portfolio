@@ -5,7 +5,6 @@ import BlurhashComp from "./BlurhashComp";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import { useTheme } from "../context/Theme";
 import template1 from "../images/template1.png";
 import template2 from "../images/template2.png";
 import template3 from "../images/template3.png";
@@ -16,17 +15,24 @@ import react1 from "../images/react1.png";
 import react3 from "../images/react3.png";
 import react2 from "../images/react2.png";
 import react4 from "../images/react4.png";
+import nike from "../images/nike.png";
 
 import Buttons from "./Buttons";
 export const Portfolio = () => {
-  const { theme } = useTheme();
   const projects = [
     {
       projectName: "Ecommerce",
-      demo: "https://souqlii.com/",
+      demo: "https://jammal-67432.firebaseapp.com/",
       repo: "https://github.com/Ahmad-Shabaan/E-commerce",
       description: "Simple Ecommerce using react js + firebase",
       imgUrl: react4,
+    },
+    {
+      projectName: "Nike Store",
+      demo: "https://nike-sigma-opal.vercel.app/",
+      repo: "https://github.com/Ahmad-Shabaan/nike.git",
+      description:"I developed a sleek Nike store using **React.js** for a dynamic UI, styled with **Tailwind CSS** for a responsive design, and enhanced with **Framer Motion** for smooth animations. This project showcases my skills in creating modern, interactive, and visually appealing web applications.",
+      imgUrl: nike,
     },
     {
       projectName: "Restaurant",
